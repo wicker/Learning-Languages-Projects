@@ -1,4 +1,7 @@
-/* Jen Hanni [CS163] "prog1symtable.h" [Program #1] */
+// Jenner Hanni  
+// Symbl table assignment from 
+// http://web.cecs.pdx.edu/~karlaf/CS163_Spring2011/Prog1.html
+
 /* Needs deconstructors in nodes and sanitized inputs */
 
 #include <iostream>
