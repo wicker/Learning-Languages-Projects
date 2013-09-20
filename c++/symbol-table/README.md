@@ -6,8 +6,11 @@ Proof of concept program to build, traverse, and destroy linear linked lists.
 **Stats**
 
 Language: C++
+
 Date: April 2011 
+
 Author: Jenner 'wicker' Hanni
+
 License: 3-clause BSD
 
 **Instructions**
@@ -18,6 +21,6 @@ The program has a simple text interface that prompts the user to add, modify, or
 
 **Further Work**
 
-# Sanitize the inputs
-# Change the format of the display
-# Allow for sorting the entry display by name, type, or value
+- Sanitize the inputs
+- Change the format of the display
+- Allow for sorting the entry display by name, type, or value
