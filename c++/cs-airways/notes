@@ -1,0 +1,85 @@
+******************************************************************************
+************ Jen Hanni [class] Design Considerations [Program #2] ************
+******************************************************************************
+
+My initial idea was to test this by adding names to a queue that gave them a
+boarding pass and then be able to generate the list of passengers in boarding
+and deboarding order.
+
+Program requirements
+	#1 Implement the queue using a circular linked list
+	#2 Implement the stack using a flexible array
+
+I decided to treat passengers from the perspective of status.
+	++ ticketed, not aboard
+	++ aboard
+	++ deplaned
+
+At any time, the following lists can be generated:
+	++ a list of ticketed passengers in order they will board
+	++ a list of passengers aboard in the order they will deplane
+
+Build an application to book a passenger 
+
+	ticketedList	queue
+
+	++give name a ticket number and seat number
+	++add them to the queue (enqueue)
+		++set a status 'ticketed, not aboard'
+	++see who's in the queue (peek, display)
+	++removes from the queue, passes to stack (dequeue)
+
+	boardingList	stack
+
+	++add name to the stack (push)
+		++check for the ticket number
+		++set a status 'aboard'
+	++see who's aboard (peek, display)
+	++removes from stack (pop)
+		++deletes the node
+		++set a status 'deplaned'
+
+******************************************************************************
+
+Notes
+
+make queue list (ticketed
+1. creates node with name
+assigns next seat # --> 1A to 9F
+assigns next ticket # --> 900401-900440
+
+enqueue this node
+
+<< select 1 to add another, select 2 to generate boarding list, select 3 to generate deboarding list
+
+while(head) dequeue head, head=head->nxt;
+	display contents of this node
+	push this node to stack
+
+when queue is empty (!head)
+stack is full; generate debaroading list, pop off stack, display contents of each node, return 0 
+
+adding to CLL
+
+head = 0;
+head->next = tail->next = head;
+node * nodetoadd = set(name)
+
+if (!head) {
+	head = nodetoadd
+	tail = 0;
+	head->next = tail;
+	tail->next = head;
+	   }
+
+else if (!tail) 
+	   {
+	tail = nodetoadd;
+	head->next = tail;
+	tail->next = head;
+	   }
+else 	   {
+	tail = nodetoadd;
+	   }
+
+
