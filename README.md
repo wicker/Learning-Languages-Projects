@@ -24,8 +24,9 @@ See the <a href="https://github.com/wicker/Project-Euler">Project Euler reposito
 List of Project Ideas
 -----------------
 
-This is the list from @thekarangoel's Projects repo, which he collected from these resources:
+This is the list from Karan Goel's Projects repo:
 
+* [thekarangoel's Projects](https://github.com/thekarangoel/Projects)
 * [Martyr2’s Mega Project List](http://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)
 * [Rosetta Code](http://rosettacode.org/)
 
