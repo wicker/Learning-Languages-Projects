@@ -5,12 +5,9 @@ Proof of concept program to build, traverse, and destroy linear linked lists.
 
 **Stats**
 
-Language: C++
-
-Date: April 2011 
-
-Author: Jenner 'wicker' Hanni
-
+Language: C++\\
+Date: April 2011 \\
+Author: Jenner 'wicker' Hanni\\
 License: 3-clause BSD
 
 **Instructions**
