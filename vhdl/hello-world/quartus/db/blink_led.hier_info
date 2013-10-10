@@ -1,0 +1,29 @@
+|blink_led
+clock_50 => led[0]~reg0.CLK
+clock_50 => led[1]~reg0.CLK
+clock_50 => led[2]~reg0.CLK
+clock_50 => led[3]~reg0.CLK
+clock_50 => led[4]~reg0.CLK
+clock_50 => led[5]~reg0.CLK
+clock_50 => led[6]~reg0.CLK
+clock_50 => led[7]~reg0.CLK
+key[0] => Mux0.IN5
+key[0] => Mux1.IN5
+key[0] => led[7]~reg0.DATAIN
+key[0] => led[6]~reg0.DATAIN
+key[0] => led[5]~reg0.DATAIN
+key[1] => Mux0.IN4
+key[1] => Mux1.IN4
+key[1] => led[2]~reg0.DATAIN
+key[1] => led[1]~reg0.DATAIN
+key[1] => led[0]~reg0.DATAIN
+led[0] <= led[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= led[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
